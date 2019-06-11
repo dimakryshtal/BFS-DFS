@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" >
+ <head>
+  <title>Graphs</title>    
+  <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+  <textarea id="AdjacencyMatrix" name="AdjacencyMatrix"rows="5" cols="33"> </textarea>
+  <input type="text" id="Node" name="Node" value = "Enter the number of the node">
+  <button class="button" id = "first-button" onclick = "graph(getMatr())" >To build a graph</button> 
+  <button class="button button2"id = "second-button" onclick="BFS(getMatr(), getNode())"disabled>Bredth first search</button> 
+  <button class="button button3"id = "third-button" onclick="DFS(getMatr(), getNode())" disabled>Depth first search</button> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.css"/>
+  <div class="network" id = "myNetwork"></div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vis/4.19.1/vis.min.js'></script>
+  <script src="js/index3.js"></script>
+  </body>
+</html>
