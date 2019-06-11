@@ -113,11 +113,11 @@ const BFS = (x, node) => {
   for (let i = 0; i < x.length; i++) {
     matrix2.push(Array(x.length).fill(0));
   }
-  visited[node] = 1;
-
+  
   const visited = Array(x.length).fill(0);
+  visited[node] = 1;
+  
   const queue = [node];
-
   let currentNode = queue[0];
 
   while (queue.length != 0) {
